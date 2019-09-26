@@ -65,6 +65,36 @@ function makeName(firstName, middleName, lastName) {
 console.log(makeName("John","Fitzgerald","Kennnedy"));
 console.log(makeName("Robert", "\"Beto\"", "O'Rourke").length)
 
+// Make a name with middle initial
+function makeBetterName(first, middle, last) {
+  if (middle.length === 1) {
+      middle = middle + ".";
+      let completeName = first + " " + middle + " " + last;
+    return completeName;
+} else {
+    let completeName = first + " " + middle + " " + last;
+    return completeName;
+  }
+}
+
+console.log(makeBetterName("Donald", "F", "Trump"));
+
+function whoWon (home, away) {
+    if (home > away); {
+        let winner = "The Home team won!";
+        return winner;
+    }
+    else if (home === away)
+        let winner = "It was a tie!"
+        return winner;
+    else (home < away); {
+        let winner = "The Away team won!"
+        return winner;
+    }
+}
+
+console.log(whoWon("55", "56"))
+
 </script>
 </body>
 </html>
